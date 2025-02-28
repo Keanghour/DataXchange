@@ -1,0 +1,196 @@
+
+---
+
+# Data Format Converter
+
+**Data Format Converter** is a Python-based desktop application that allows users to easily convert data between different formats, including **JSON**, **XML**, **XSD**, and **OFS** (Output File Specification). It provides a simple graphical user interface (GUI) built with `Tkinter` to facilitate conversions between these formats.
+
+## Features:
+
+### Supported Conversions:
+- **JSON to XML**: Converts JSON data to XML format.
+- **XML to JSON**: Converts XML data to JSON format.
+- **XML to XSD**: Converts XML data to XSD (XML Schema Definition) format.
+- **XSD to XML**: Converts XSD (XML Schema) to XML format.
+- **JSON to OFS**: Converts JSON data to OFS format.
+- **XML to OFS**: Converts XML data to OFS format.
+
+### Output Format Examples:
+- **JSON to OFS**: Converts a JSON object into a key-value based OFS string for system-to-system communication.
+- **XML to OFS**: Converts an XML-based data structure into OFS format.
+
+## Installation Requirements:
+
+### Prerequisites:
+To run the application, you need to have **Python 3.x** installed on your system.
+
+### Required Libraries:
+- `Tkinter`: Python GUI library (pre-installed with Python).
+- `json`: Python standard library for working with JSON data (pre-installed).
+- `xmltodict`: A simple XML-to-dictionary and dictionary-to-XML conversion library.
+- `lxml`: A powerful library for processing XML and HTML in Python.
+
+You can install the necessary libraries via `pip` by running the following command:
+
+```bash
+pip install xmltodict lxml
+```
+
+## How to Use the Application:
+
+### Step 1: Launch the Application
+Run the Python script to launch the Data Format Converter application.
+
+```bash
+python converter_app.py
+```
+
+The GUI will appear on your screen, allowing you to interact with it.
+
+### Step 2: Select the Conversion Type
+On the main screen, there is a dropdown menu labeled **"Select Conversion Type"**. From this dropdown, select one of the following conversion options:
+- JSON to XML
+- XML to JSON
+- XML to XSD
+- XSD to XML
+- JSON to OFS
+- XML to OFS
+
+### Step 3: Input Data
+Below the dropdown, there is an input text area labeled **"Input Data"** where you can paste or type in the data that you want to convert. Depending on the conversion type you selected, you will need to enter **JSON** or **XML** data into the input field.
+
+- For **JSON** conversions, ensure that the input is in valid JSON format.
+- For **XML** conversions, ensure that the input is in valid XML format.
+
+### Step 4: Perform the Conversion
+Click on the **Convert** button to start the conversion. The application will process your input and display the result in the **Output Data** section.
+
+### Step 5: Copy or Clear the Output
+- **Copy Output**: After the conversion, you can click the **Copy Output** button to copy the result to your clipboard.
+- **Clear Output**: If you want to clear the output, click the **Clear Output** button.
+
+## Example Usage:
+
+### JSON to OFS Example:
+
+#### Input (JSON Format):
+```json
+{
+  "txnRef": "12345****",
+  "accNumber": "012345****",
+  "date": "20250101"
+}
+```
+
+#### Output (OFS Format):
+```
+TXNREF:1:1=12345****,ACCNUM:1:1=012345****,DATE:1:1=20250101
+```
+
+This output is a converted **OFS** string format, which is used in financial transactions or system-to-system communications.
+
+---
+
+### XML to OFS Example:
+
+#### Input (XML Format):
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <txnRef>12345****</txnRef>
+    <accNumber>012345****</accNumber>
+    <date>20250101</date>
+</root>
+```
+
+#### Output (OFS Format):
+```
+TXNREF:1:1=12345****,ACCNUM:1:1=012345****,DATE:1:1=20250101
+```
+
+This output is also an **OFS** format, but the input data was in XML format.
+
+---
+
+### XML to JSON Example:
+
+#### Input (XML Format):
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <txnRef>12345****</txnRef>
+    <accNumber>012345****</accNumber>
+    <date>20250101</date>
+</root>
+```
+
+#### Output (JSON Format):
+```json
+{
+  "txnRef": "12345****",
+  "accNumber": "012345****",
+  "date": "20250101"
+}
+```
+
+This output is the **JSON** representation of the XML data.
+
+---
+
+## Features in Detail:
+
+### 1. **JSON to XML**:
+Converts JSON data to XML format by parsing the input JSON and creating an XML string. The result is an XML structure wrapped in `<root>` tags.
+
+### 2. **XML to JSON**:
+Converts XML data into its JSON representation. The root element is removed, and the remaining elements are represented as JSON objects.
+
+### 3. **XML to XSD**:
+Generates an XSD (XML Schema Definition) based on the input XML data. This is useful when you need to generate a schema for validating XML files.
+
+### 4. **XSD to XML**:
+Converts an XSD schema to a corresponding XML structure based on the schema's element definitions.
+
+### 5. **JSON to OFS**:
+Converts the key-value pairs from a JSON object into a structured OFS message format used in financial or system integration. The OFS message includes the `txnRef`, `accNumber`, and `date` fields.
+
+### 6. **XML to OFS**:
+Converts XML data into OFS format by extracting the key values from the XML tags and constructing the OFS string in the same format as **JSON to OFS**.
+
+## User Interface:
+- **Input Area**: Text box to paste or type in your data (JSON or XML).
+- **Conversion Type Dropdown**: Allows you to select the type of conversion.
+- **Convert Button**: Initiates the conversion process.
+- **Output Area**: Displays the result after conversion.
+- **Copy and Clear Buttons**: Copy the result to clipboard or clear the output area.
+
+---
+
+## Installation:
+
+### Step 1: Install Dependencies
+To run this application, make sure you have Python 3.x installed. Install the required libraries using `pip`:
+
+```bash
+pip install xmltodict lxml
+```
+
+### Step 2: Run the Application
+Clone or download the Python script, then run it as follows:
+
+```bash
+python converter_app.py
+```
+
+This will open the GUI, and you can start using the tool immediately.
+
+---
+
+## License:
+This project is open-source and available under the MIT License. You can freely use, modify, and distribute this application as needed.
+
+---
+
+### Conclusion:
+The **Data Format Converter** application makes it easy to convert between popular data formats like JSON, XML, XSD, and OFS. It’s an ideal tool for developers, system administrators, or anyone working with data format conversions.
+
