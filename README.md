@@ -1,4 +1,5 @@
 # DataXchange
+
 A simple GUI tool for converting between JSON, XML, XSD, and OFS formats using Python's tkinter. The app supports conversions like JSON to XML, XML to JSON, and more. Users can input data, select a conversion type, and view or copy the output. It also includes options for clearing the output.
 
 ---
@@ -46,3 +47,10 @@ This app allows you to convert between various data formats like JSON, XML, XSD,
 ## License
 
 This project is open-source under the MIT License.
+
+---
+
+## Sample Image
+
+![Data Format Converter](https://github.com/Keanghour/DataXchange/blob/main/Image%20Data%20Format%20Converter.jpg)
+
