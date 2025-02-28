@@ -44,13 +44,28 @@ This app allows you to convert between various data formats like JSON, XML, XSD,
    python converter_app.py
    ```
 
-## License
-
-This project is open-source under the MIT License.
-
 ---
 
 ## Sample Image
 
 ![Data Format Converter](https://github.com/Keanghour/DataXchange/blob/main/Image%20Data%20Format%20Converter.jpg)
 
+---
+
+## Contact
+
+Feel free to reach out if you have any questions or need further assistance:
+
+- **Email**: [phokeanghour12@gmail.com](mailto:phokeanghour12@gmail.com)
+- **Telegram**: [@phokeanghour](https://t.me/phokeanghour)
+
+[![Telegram](https://www.vectorlogo.zone/logos/telegram/telegram-ar21.svg)](https://t.me/phokeanghour)
+[![LinkedIn](https://www.vectorlogo.zone/logos/linkedin/linkedin-ar21.svg)](https://www.linkedin.com/in/pho-keanghour-27133b21b/)
+
+---
+
+**Credit**: This project was created by **Pho Keanghour**.
+
+---
+
+Let me know if this works or if you'd like any more adjustments!
